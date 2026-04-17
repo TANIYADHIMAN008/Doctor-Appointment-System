@@ -1,0 +1,168 @@
+.calendar-container {
+  padding: 20px;
+  color: white;
+}
+
+/* CALENDAR MAIN */
+.fc {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* HEADER */
+.fc-toolbar-title {
+  color: #f1f5f9;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* BUTTONS */
+.fc-button {
+  background: rgba(255,255,255,0.1) !important;
+  border: none !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+
+.fc-button:hover {
+  background: linear-gradient(135deg,#3b82f6,#22c55e) !important;
+}
+
+/* DAYS HEADER */
+.fc-col-header-cell {
+  background: linear-gradient(135deg,#3b82f6,#2563eb);
+  color: white;
+  font-weight: 600;
+}
+
+/* DATE NUMBERS */
+.fc-daygrid-day-number {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+}
+
+/* DAY CELLS */
+.fc-daygrid-day {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* TODAY */
+.fc-day-today {
+  background: rgba(59,130,246,0.2) !important;
+}
+
+/* EVENTS */
+.fc-event {
+  border-radius: 6px;
+  padding: 2px 4px;
+  font-size: 12px;
+}
+
+/* ===== MODAL ===== */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: rgba(30,41,59,0.95);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* INPUT + SELECT */
+.modal input,
+.modal select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  background: rgba(255,255,255,0.1);
+}
+
+/* 🔥 DROPDOWN FIX */
+.modal select option {
+  background: #1e293b;
+  color: white;
+}
+
+/* BUTTONS */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-buttons button:first-child {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background: linear-gradient(135deg,#3b82f6,#22c55e);
+  color: white;
+}
+
+.modal-buttons button:hover {
+  transform: translateY(-2px);
+}
+
+/* FIX Z-INDEX */
+.fc {
+  z-index: 1 !important;
+}
+/* 🔥 FORCE DATE COLOR (IMPORTANT FIX) */
+
+.fc-daygrid-day-number {
+  color: #ffffff !important;   /* pure white */
+  font-weight: 700 !important;
+  font-size: 14px;
+}
+
+/* WEEK DAYS (Sun Mon Tue...) */
+.fc-col-header-cell-cushion {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+/* DAY CELL TEXT (extra safety) */
+.fc-daygrid-day {
+  color: #ffffff !important;
+}
+
+/* DISABLE FADED DAYS (previous/next month) */
+.fc-day-other .fc-daygrid-day-number {
+  color: #64748b !important; /* dim but visible */
+}
+
+/* TODAY DATE STRONG */
+.fc-day-today .fc-daygrid-day-number {
+  color: #22c55e !important; /* highlight today */
+  font-weight: 800;
+}

@@ -1,0 +1,70 @@
+/* BACKGROUND */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* CARD */
+.auth-card {
+  background: #f5f6f8;
+  padding: 25px;
+  border-radius: 16px;
+  width: 360px;
+  text-align: center;
+}
+
+/* HEADING */
+.auth-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #1e3c72;
+
+  /* 🔥 Animation */
+  animation: floatText 3s ease-in-out infinite;
+  text-shadow: 0px 2px 8px rgba(30, 60, 114, 0.2);
+}
+
+/* ICON */
+.icon {
+  margin-right: 8px;
+}
+
+/* INPUT */
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #f0f2f5;
+  font-size: 13px;
+  outline: none;
+}
+
+.auth-card input:focus {
+  border-color: #2a5298;
+}
+
+/* BUTTON */
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #2a5298, #1e3c72);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes floatText {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0px); }
+}

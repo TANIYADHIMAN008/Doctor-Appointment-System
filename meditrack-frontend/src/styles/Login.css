@@ -1,0 +1,137 @@
+/* PAGE */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 🔥 MATCH DASHBOARD THEME */
+  background: linear-gradient(135deg, #0b1220, #1e3a8a, #2563eb);
+}
+
+/* CARD */
+.login-card {
+  width: 360px;
+  padding: 35px 30px;
+  border-radius: 20px;
+
+  /* 🔥 GLASS EFFECT (better) */
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.login-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUT GROUP */
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+  outline: none;
+}
+
+/* FOCUS EFFECT */
+.input-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59,130,246,0.4);
+}
+
+/* LEFT ICON */
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* RIGHT ICON */
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* BUTTON */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #3b82f6, #22c55e);
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(34,197,94,0.4);
+}
+
+/* REGISTER TEXT */
+.register-text {
+  margin-top: 15px;
+  color: #cbd5e1;
+}
+
+/* REGISTER BUTTONS */
+.register-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.register-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* REGISTER HOVER */
+.register-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  transform: scale(1.05);
+}

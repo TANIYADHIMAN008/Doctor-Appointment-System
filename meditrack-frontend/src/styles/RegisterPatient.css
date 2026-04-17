@@ -1,0 +1,96 @@
+/* PAGE BACKGROUND */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  font-family: 'Inter', sans-serif;
+}
+
+/* CARD */
+.register-card {
+  width: 420px;
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  animation: fadeIn 0.5s ease;
+}
+
+/* HEADING */
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e293b;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* INPUT + SELECT + TEXTAREA */
+.register-card input,
+.register-card select,
+.register-card textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+/* TEXTAREA FIX */
+.register-card textarea {
+  resize: none;
+  min-height: 90px;
+}
+
+/* FOCUS EFFECT */
+.register-card input:focus,
+.register-card select:focus,
+.register-card textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* BUTTON */
+.register-card button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.register-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* BUTTON CLICK */
+.register-card button:active {
+  transform: scale(0.98);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

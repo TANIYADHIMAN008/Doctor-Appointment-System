@@ -1,0 +1,32 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1e3a8a;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.sidebar a:hover {
+  opacity: 0.8;
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 10px;
+  background: #ef4444;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
